@@ -38,7 +38,7 @@
                             <div class="container">
                                 <h1 class="title">社团介绍</h1>
                                 <div class="content">
-                                    <p></p>
+                                    <p>{{$society->introduction}}</p>
                                 </div>
                             </div>
                         </section>

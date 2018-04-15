@@ -12,9 +12,9 @@ class SocietyController extends Controller
         return view('society.societies.list',['societies'=>$societies]);
     }
 
-    public function detail() {
-        $society = Society::where('id','=,1');
-        return view('society.societies.detail');
+    public function detail($id) {
+        $society = Society::find($id);
+        return view('society.societies.detail',['society'=>$society]);
     }
 
     public function pre_establish() {

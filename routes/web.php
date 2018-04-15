@@ -13,14 +13,12 @@
 
 Route::prefix('society')->group(function () {
     Route::prefix('societies')->group(function () {
-        Route::get('detail',function () {
-            return view('society.societies.detail');
-        });
+        Route::get('detail/{id}','SocietyController@detail');
         Route::get('list','SocietyController@list');
         Route::get('establish',function() {
            return view('society.societies.establish');
         });
-    });
+});
     Route::get('activities', function () {
         return view('welcome');
     });
