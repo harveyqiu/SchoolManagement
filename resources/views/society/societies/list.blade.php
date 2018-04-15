@@ -23,7 +23,7 @@
                     </div>
                 </div>
                 <footer class="card-footer">
-                    <a class="card-footer-item" href="">
+                    <a class="card-footer-item" href="{{URL::action('SocietyController@detail',['id'=>$society->id])}}">
                         查看该社团
                     </a>
                 </footer>

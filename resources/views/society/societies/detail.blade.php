@@ -7,7 +7,7 @@
                 <div class="container">
                     <div class="colmuns">
                         <div class="column">
-                            <p class="title"></p>
+                            <p class="title">{{$society->name}}</p>
                             <div class="content">
                                 <p>社团QQ群: </p>
                             </div>
@@ -20,7 +20,7 @@
                     <nav class="tabs is-boxed">
                         <ul>
                             <li>
-                                <a href="/">活动</a>
+                                <a href="">活动</a>
                             </li>
                             <li>
                                 <a href="">杰出成员</a>
@@ -45,17 +45,21 @@
                     </div>
                     <div class="column">
                         <section class="section">
-                            <a class="button is-warning is-large">社团未招新</a>
-                            <form action="" method="post">
-                                <input hidden name="ClubId" value="" />
-                                <button class="button is-info is-large">
-                                    加入该社团
-                                </button>
-                            </form>
+                            @if ($society->recruit == '1')
+                                <form action="" method="post">
+                                    <input hidden name="ClubId" value=""/>
+                                    <button class="button is-info is-large">
+                                        加入该社团
+                                    </button>
+                                </form>
+                            @else
+                                <a class="button is-warning is-large">社团未招新</a>
+                            @endif
+
                         </section>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    @endsection
+@endsection
