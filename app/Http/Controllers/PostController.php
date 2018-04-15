@@ -9,12 +9,12 @@ use Illuminate\Http\Request;
 class PostController extends Controller
 {
     public function listForAdmin() {
-        $posts = Post::where('id','>=','0')->paginate(15);
+        $posts = Post::where('id','>=','0')->paginate(10);
         return view('society.admin.post.list',['posts'=>$posts]);
     }
 
     public function listForProprieter() {
-        $posts = Post::where('id','>=','0')->pagainate(15);
+        $posts = Post::where('id','>=','0')->pagainate(10);
         return view('society.proprieter.post.list',['posts'=>$posts]);
     }
 

@@ -49,16 +49,16 @@
         </tfoot>
         <tbody>
         @foreach($posts as $post)
-        <tr>
-            <th>{{  $post.ClubObject.ClubName }}</th>
-            <th>{{ $post.ClubObject.ClubObject.username }}</th>
-            <th>{{ $post.LinkmanName }}</th>
-            <th>{{ $post.Date }} {{ $post.Time }}</th>
-            <th>{{ $post.Stars }}</th>
-            <th><a href="">详情</a></th>
-        </tr>
-        {% endfor %}
+            <tr>
+                <th>社团名称</th>
+                <th>{{ $post->id }}</th>
+                <th>{{ $post->linkman_name }}</th>
+                <th>{{ $post->date }} {{ $post->time }}</th>
+                <th>{{ $post->stars }}</th>
+                <th><a href="">详情</a></th>
+            </tr>
+        @endforeach
         </tbody>
     </table>
-
-    @endsection
+    {{$posts->links()}}
+@endsection
