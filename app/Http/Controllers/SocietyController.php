@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class SocietyController extends Controller
 {
     public function list() {
-        $societies = Society::where('id','>=','0')->paginate(1);
+        $societies = Society::where('id','>=','0')->paginate(10);
         return view('society.societies.list',['societies'=>$societies]);
     }
 
@@ -17,11 +17,16 @@ class SocietyController extends Controller
         return view('society.societies.detail',['society'=>$society]);
     }
 
-    public function pre_establish() {
+    public function establish() {
         return view('society.societies.establish');
     }
 
-    public function establish() {
-        return view('establish');
+    public function check_establish() {
+        return view('welcome');
+    }
+
+    public function listForAdmin() {
+        $societies = Society::where('id','>=','0')->paginate(10);
+        return view('society.admin.societies.list',['societies'=>$societies]);
     }
 }
