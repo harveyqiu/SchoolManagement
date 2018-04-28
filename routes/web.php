@@ -24,7 +24,7 @@ Route::prefix('society')->group(function () {
         return view('welcome');
     });
     Route::prefix('admin')->group(function () {
-        Route::get('dashboard',function () {
+        Route::get('',function () {
             return view('society/admin/dashboard');
         });
         Route::prefix('users')->group(function () {
@@ -44,9 +44,7 @@ Route::prefix('society')->group(function () {
         });
         Route::prefix('societies')->group(function () {
             Route::get('list', 'SocietyController@listForAdmin');
-            Route::get('detail', function () {
-                return view('welcome');
-            });
+            Route::get('detail/{id}','SocietyController@detailForAdmin');
             Route::get('new', function () {
                 return view('welcome');
             });

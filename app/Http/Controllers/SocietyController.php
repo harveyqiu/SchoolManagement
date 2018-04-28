@@ -29,4 +29,9 @@ class SocietyController extends Controller
         $societies = Society::where('id','>=','0')->paginate(10);
         return view('society.admin.societies.list',['societies'=>$societies]);
     }
+
+    public function detailForAdmin($id) {
+        $society = Society::find($id);
+        return view('society.admin.societies.detail',['society'=>$society]);
+    }
 }

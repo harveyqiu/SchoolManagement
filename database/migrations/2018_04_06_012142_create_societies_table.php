@@ -26,6 +26,7 @@ class CreateSocietiesTable extends Migration
             $table->boolean('recruit');
             $table->string('email');
             $table->integer('stars');
+            $table->integer('type');
             $table->timestamps();
         });
     }
