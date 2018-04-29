@@ -34,4 +34,8 @@ class SocietyController extends Controller
         $society = Society::find($id);
         return view('society.admin.societies.detail',['society'=>$society]);
     }
+
+    public function join() {
+        return view('welcome');
+    }
 }

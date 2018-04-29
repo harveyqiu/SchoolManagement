@@ -55,7 +55,7 @@
                 <th>{{ $post->linkman_name }}</th>
                 <th>{{ $post->date }} {{ $post->time }}</th>
                 <th>{{ $post->stars }}</th>
-                <th><a href="">详情</a></th>
+                <th><a href="{{URL::action('PostController@detailForAdmin',['id'=>$post->id])}}">详情</a></th>
             </tr>
         @endforeach
         </tbody>

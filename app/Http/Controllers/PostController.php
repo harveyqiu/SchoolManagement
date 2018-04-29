@@ -10,7 +10,7 @@ class PostController extends Controller
 {
     public function listForAdmin() {
         $posts = Post::where('id','>=','0')->paginate(10);
-        return view('society.admin.post.list',['posts'=>$posts]);
+        return view('society.admin.posts.list',['posts'=>$posts]);
     }
 
     public function listForProprieter() {
@@ -23,7 +23,7 @@ class PostController extends Controller
          *  page for admin and proprieter should be different.
          */
         $post = Post::find($id);
-        return view('society.admin.post.detail',['post'=>$post]);
+        return view('society.admin.posts.detail',['post'=>$post]);
     }
 
     public function detailForProprieter($id) {
@@ -35,8 +35,8 @@ class PostController extends Controller
     }
 
 
-    public function delete() {
-        return view('welcome');
+    public function deleteForAdmin() {
+        return view('society.admin.posts.delete');
     }
 
     public function rate() {
@@ -44,7 +44,7 @@ class PostController extends Controller
     }
 
     public function pre_add() {
-        return view('society.proprieter.post.add');
+        return view('society.proprieter.posts.add');
     }
 
     public function add() {

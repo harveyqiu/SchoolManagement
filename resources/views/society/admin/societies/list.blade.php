@@ -74,7 +74,7 @@
                     ({{ $society->proprieter_class }})班 {{$society->proprieter_name}}
                 </th>
                 <th>
-                    <a>查看详情</a>
+                    <a href="{{URL::action('SocietyController@detailForAdmin',['id'=>$society->id])}}">查看详情</a>
                 </th>
             </tr>
         @endforeach
