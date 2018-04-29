@@ -58,7 +58,7 @@
             </p>
             <ul class="menu-list">
                 <li>
-                    <a href="/">仪表盘</a>
+                    <a href="{{URL::to('/society/admin/')}}">仪表盘</a>
                 </li>
             </ul>
             <p class="menu-label">
@@ -66,10 +66,10 @@
             </p>
             <ul class="menu-list">
                 <li>
-                    <a href="">所有社团</a>
+                    <a href="{{URl::action('SocietyController@listForAdmin')}}">所有社团</a>
                 </li>
                 <li>
-                    <a href="">社团活动记录</a>
+                    <a href="{{URL::action('PostController@listForAdmin')}}">社团活动记录</a>
                 </li>
             </ul>
             <p class="menu-label">

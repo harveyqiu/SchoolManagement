@@ -10,4 +10,9 @@ class Post extends Model
         'club_id','linkman_name','linkman_class','linkman_grade','linkman_qq','stars',
         'region','date','time','process','content','feeling','assessment'
     ];
+
+    public function society()
+    {
+        return $this->belongsTo('App\Post');
+    }
 }

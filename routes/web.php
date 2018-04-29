@@ -24,9 +24,7 @@ Route::prefix('society')->group(function () {
         return view('welcome');
     });
     Route::prefix('admin')->group(function () {
-        Route::get('',function () {
-            return view('society/admin/dashboard');
-        });
+        Route::get('','AdminDashboardController@index');
         Route::prefix('users')->group(function () {
             Route::get('list', function () {
                 return view('welcome');

@@ -14,4 +14,14 @@ class Society extends Model
     protected $fillable = [
         'name', 'email','introduction','proprieter_name','proprieter_class','proprieter_grade','proprieter_qq','achievements','recruit','stars','type'
     ];
+
+    public function posts()
+    {
+        return $this->hasMany('App\Post');
+    }
+
+    public function members()
+    {
+        return $this->hasMany('App\Student');
+    }
 }
