@@ -11,7 +11,13 @@ class Student extends Model
         return $this->hasOne('App\User');
     }
 
+    public function societies()
+    {
+        # set a many to many relationship
+        return 0;
+    }
+
     protected $fillable = [
-        'class', 'grade', 'name', 'qq'
+        'classroom', 'grade', 'realname', 'qq','attend_year'
     ];
 }

@@ -43,6 +43,7 @@ Route::prefix('society')->group(function () {
         Route::prefix('societies')->group(function () {
             Route::get('list', 'SocietyController@listForAdmin');
             Route::get('detail/{id}','SocietyController@detailForAdmin');
+            Route::get('list/unconfirmed','SocietyController@unconfirmedListForAdmin');
             Route::get('new', function () {
                 return view('welcome');
             });

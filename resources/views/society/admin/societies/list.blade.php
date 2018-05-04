@@ -21,36 +21,17 @@
                     社长
                 </th>
                 <th>
+                    审核情况
+                </th>
+                <th>
                     详情
                 </th>
             </tr>
         </thead>
-        <tfoot>
-            <tr>
-                <th>
-                    社团ID
-                </th>
-                <th>
-                    社团名称
-                </th>
-                <th>
-                    是否招新
-                </th>
-                <th>
-                    星
-                </th>
-                <th>
-                    社长
-                </th>
-                <th>
-                    详情
-                </th>
-            </tr>
-        </tfoot>
         <tbody>
         @foreach($societies as $society)
             <tr>
-                <th>{{$society->id}}</th>
+                <th>{{$society->society_id}}</th>
                 <th>{{$society->name}}</th>
                 <th>
                     @if ($society->recruit == 1)
@@ -72,6 +53,15 @@
                         三
                     @endif
                     ({{ $society->proprieter_class }})班 {{$society->proprieter_name}}
+                </th>
+                <th>
+                    @if ($society->confirmed == 0)
+                        <p style="color:red">未审核</p>
+                    @elseif ($society->confirmed == 1)
+                        <p>已审核</p>
+                    @else
+                     未知情况
+                    @endif
                 </th>
                 <th>
                     <a href="{{URL::action('SocietyController@detailForAdmin',['id'=>$society->id])}}">查看详情</a>

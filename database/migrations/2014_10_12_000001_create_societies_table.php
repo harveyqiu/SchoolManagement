@@ -15,7 +15,7 @@ class CreateSocietiesTable extends Migration
     {
         Schema::create('societies', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('club_id')->unique();
+            $table->integer('society_id')->unique();
             $table->string('name');
             $table->text('introduction');
             $table->string('proprieter_name');
@@ -28,6 +28,9 @@ class CreateSocietiesTable extends Migration
             $table->integer('stars');
             $table->integer('type');
             $table->timestamps();
+            $table->unsignedInteger('user_id');
+            $table->boolean('confirmed');
+            $table->foreign('user_id')->references('id')->on('users');
         });
     }
 

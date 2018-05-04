@@ -27,6 +27,8 @@ class CreatePostsTable extends Migration
             $table->string('region');
             $table->integer('stars');
             $table->timestamps();
+            $table->unsignedInteger('society_id');
+            $table->foreign('society_id')->references('id')->on('societies');
         });
     }
 

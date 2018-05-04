@@ -38,4 +38,9 @@ class SocietyController extends Controller
     public function join() {
         return view('welcome');
     }
+
+    public function unconfirmedListForAdmin() {
+        $societies = Society::where('confirmed',False)->paginate(10);
+        return view('society.admin.societies.list',['societies'=>$societies]);
+    }
 }

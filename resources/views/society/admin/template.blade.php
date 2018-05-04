@@ -69,6 +69,9 @@
                     <a href="{{URl::action('SocietyController@listForAdmin')}}">所有社团</a>
                 </li>
                 <li>
+                    <a href={{URL::action('SocietyController@unconfirmedListForAdmin')}}>未审核社团</a>
+                </li>
+                <li>
                     <a href="{{URL::action('PostController@listForAdmin')}}">社团活动记录</a>
                 </li>
             </ul>
