@@ -40,6 +40,11 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
+        
+        'admin' => [
+            'driver' => 'session',
+            'provider' => 'admins',
+        ]
 
         'api' => [
             'driver' => 'token',
@@ -69,6 +74,8 @@ return [
             'driver' => 'eloquent',
             'model' => App\User::class,
         ],
+
+        
 
         // 'users' => [
         //     'driver' => 'database',

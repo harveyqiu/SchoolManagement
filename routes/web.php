@@ -77,9 +77,8 @@ Route::prefix('society')->group(function () {
             });
         });
     });
-    Route::get('login',function () {
-        return view('society.login');
-    });
+    Route::get('auth/login','StudentLoginController@getLogin');
+    Route::post('auth/login','StudentLoginController@postLogin');
     Route::get('dashboard',function () {
        return view('welcome');
     });

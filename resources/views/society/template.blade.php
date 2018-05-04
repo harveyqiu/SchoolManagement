@@ -80,7 +80,7 @@
                             登录
                         </a>
                         <div class="navbar-dropdown">
-                            <a class="navbar-item " href="{{URL::to('/society/login')}}">
+                            <a class="navbar-item " href="{{URL::to('/society/auth/login')}}">
                                 学生登录
                             </a>
                             <a class="navbar-item " href="">

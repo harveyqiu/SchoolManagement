@@ -8,6 +8,7 @@
                     <h2 class="title is-2" style="text-align: center">学生登录</h2>
                     <div class="columns is-mobile">
                         <div class="column is-half is-offset-one-quarter">
+                            {!! csrf_field() !!}
                             <div class="field">
                                 <label class="label">用户名</label>
                                 <div class="control">
