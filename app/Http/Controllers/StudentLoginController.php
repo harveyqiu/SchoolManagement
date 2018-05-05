@@ -23,4 +23,10 @@ class LoginController extends Controller
     {
         $this->middleware('guest')->except('logout');
     }
+
+    public function postLogin(Request $request)
+    {
+        $username = $request->input('username')
+        $password = 
+    }
 }
