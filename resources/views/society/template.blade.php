@@ -9,13 +9,13 @@
     <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/style.css') }}">
     <style>
         .is-active {
-            transform: translateY(0);
+            transform: translateY(0px);
         }
     </style>
 </head>
 <body>
 <section class="">
-    <nav class="navbar is-fixed-top ">
+    <nav class="navbar is-fixed-top is-info" id="navbar">
         <div class="navbar-brand">
             <a class="navbar-item" href="{{URL::to('/society')}}">
                 建平中学学生平台
@@ -104,18 +104,19 @@
     <script>
         var new_scroll_position = 0;
         var last_scroll_position;
-        var header = document.getElementById("navbar");
+        var navbar = document.getElementById("navbar");
 
         window.addEventListener('scroll', function(e) {
             last_scroll_position = window.scrollY;
 
             // 向下滚动
             if (new_scroll_position < last_scroll_position && last_scroll_position > 80) {
-                header.classList.add("is-active");
-
+                navbar.classList.add("is-active");
+                navbar.classList.remove("is-info")
                 // 向上滚动
             } else if (new_scroll_position > last_scroll_position) {
-                header.classList.remove("is-active");
+                navbar.classList.remove("is-active");
+                navbar.classList.add("is-info")
             }
 
             new_scroll_position = last_scroll_position;
