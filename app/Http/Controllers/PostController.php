@@ -44,7 +44,7 @@ class PostController extends Controller
     }
 
     public function pre_add() {
-        return view('society.proprieter.posts.add');
+        return view('society.proprieter.post.add');
     }
 
     public function add() {

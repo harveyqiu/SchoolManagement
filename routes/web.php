@@ -65,7 +65,7 @@ Route::prefix('society')->group(function () {
             });
             Route::get('add','PostController@pre_add');
         });
-        Route::prefix('member')->group(function () {
+        Route::prefix('members')->group(function () {
             Route::get('list',function () {
                 return view('welcome');
             });

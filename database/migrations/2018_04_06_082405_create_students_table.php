@@ -21,7 +21,8 @@ class CreateStudentsTable extends Migration
             $table->integer('attend_year');
             $table->integer('qq');
             $table->unsignedInteger('user_id');
-            $table->foreign('user_id')->references('id')->on('users');
+            $table->rememberToken();
+            $table->string('password',60);
             $table->timestamps();
         });
     }

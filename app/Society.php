@@ -15,6 +15,10 @@ class Society extends Model
         'name', 'email','introduction','proprieter_name','proprieter_class','proprieter_grade','proprieter_qq','achievements','recruit','stars','type','confirmed'
     ];
 
+    protected $hidden = [
+        'password','remember_token'
+    ];
+
     public function posts()
     {
         return $this->hasMany('App\Post');

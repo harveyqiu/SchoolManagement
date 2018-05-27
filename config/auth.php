@@ -44,12 +44,12 @@ return [
         'admin' => [
             'driver' => 'session',
             'provider' => 'admins',
-        ]
+        ],
 
         'api' => [
             'driver' => 'token',
             'provider' => 'users',
-        ],
+        ]
     ],
 
     /*
@@ -70,13 +70,21 @@ return [
     */
 
     'providers' => [
-        'users' => [
+        'students' => [
             'driver' => 'eloquent',
-            'model' => App\User::class,
+            'model' => App\Student::class,
         ],
 
         
+        'societies' => [
+            'driver' => 'eloquent',
+            'model' => App\Society::class,
+        ],
 
+        'admin' => [
+            'driver' => 'eloquent',
+            'model' => App\Admin::class
+        ]
         // 'users' => [
         //     'driver' => 'database',
         //     'table' => 'users',

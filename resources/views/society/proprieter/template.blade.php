@@ -7,6 +7,11 @@
 
     <title>建平中学学生平台</title>
     <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/style.css') }}">
+    <style>
+        .control-panel {
+            margin-right: 3%;
+        }
+    </style>
 </head>
 <body>
 
@@ -50,7 +55,7 @@
     </div>
 </nav>
 
-<div class="columns">
+<div class="columns is-mobile">
     <div class="column is-one-fifth">
         <aside class="menu">
             <p class="menu-label">
@@ -100,7 +105,7 @@
         </aside>
     </div>
 
-    <div class="column">
+    <div class="column control-panel">
         @section('content')
 
         @show

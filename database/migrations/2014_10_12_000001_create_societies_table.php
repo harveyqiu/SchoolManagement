@@ -30,7 +30,7 @@ class CreateSocietiesTable extends Migration
             $table->timestamps();
             $table->unsignedInteger('user_id');
             $table->boolean('confirmed');
-            $table->foreign('user_id')->references('id')->on('users');
+
         });
     }
 
