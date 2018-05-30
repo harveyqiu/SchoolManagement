@@ -14,8 +14,8 @@
             </div>
         </div>
     </div>
-
-    <script src="https://vuejs.org/js/vue.min.js"></script>
+    <script src="https://cdn.bootcss.com/axios/0.18.0/axios.js"></script>
+    <script src="https://cdn.bootcss.com/vue/2.5.16/vue.min.js"></script>
     <script>
         var app = new Vue({
             el: '#app',
@@ -31,6 +31,16 @@
                         'end_datetime': 'today'
                     }
                 ]
+            },
+            beforeCreate: function() {
+                axios.post('')
+                    .then(function (response) {
+                        console.log(response);
+                    })
+                    .catch(function (error) {
+                        console.log(error);
+                    });
+
             }
         })
     </script>
