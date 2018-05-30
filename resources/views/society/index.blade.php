@@ -14,174 +14,80 @@
         </div>
     </section>
     <section class="section">
-        <div class="container">
-            Swiper
-            Swiper - is the free and most modern mobile touch slider with hardware accelerated transitions and amazing native behavior. It is intended to be used in mobile websites, mobile web apps, and mobile native/hybrid apps. Designed mostly for iOS, but also works great on latest Android, Windows Phone 8 and modern Desktop browsers
+        <div class="columns">
+            <div class="column">
+                <div class="content" style="text-align:right;margin-top: 15%">
+                    <p class="title is-1">
+                        Made by JEEK
+                    </p>
+                    <p class="subtitle">
+                        Made by Harvey Qiu & Cheney Ni & Artanic Qiu
+                    </p>
+                </div>
 
-            Swiper is not compatible with all platforms, it is a modern touch slider which is focused only on modern apps/platforms to bring the best experience and simplicity.
-
-            Swiper, along with other great components, is a part of Framework7 - full featured framework for building iOS & Android apps. Swiper is also a default slider component in Ionic Framework
-
-            Powered With Top Notch Features
-            Library Agnostic
-            Swiper doesn't require any JavaScript libraries like jQuery, it makes Swiper much more smaller and faster. So it can be safety to use it with such libraries as jQuery, Zepto, jQuery Mobile, etc.
-
-            1:1 Touch movement
-            By defaut Swiper provides 1:1 touch movement interraction, but this ratio could be configured through Swiper settings
-
-            Mutation Observer
-            Swiper has option to enable Mutation Observer, with this feature Swiper will be automatically reinitilized and recalculate all required parameters if you make dynamic changes in DOM, or in Swiper styles itself
-
-            Reach API
-            Swiper comes with very rich API. It allows to create your own pagination, navigation buttons, create parallax effects and many more
-
-            Full True RTL Support
-            Swiper is the only slider that provides 100% RTL support with correct layout
-
-            Multi Row Slides Layout
-            Swiper allows to have multiple row slides layout, with few slides per column
-
-            Transition Effects
-            There are 3 new transition effects in addition to ususal Slide: Fade, 3D Cube and 3D Coverflow
-
-            Two-way Control
-            Now Swiper may be used as controller for any number of other Swipers, and even be controlled at the same time
-
-            Full Navigation Control
-            Swiper comes with all required built-in navigation elements, such are Pagination, Navigation arrows and Scrollbar
-
-            Flexbox Layout
-            Swiper uses modern flexbox layout for slides layout, this solves a lot of problems and time with size caclulations. Such layout also allows to configure Slides grid using pure CSS
-
-            Most Flexible Slides Layout Grid
-            Swiper has a lot of parameters on initialization to make it as much flexible as possible. You can control slides per view, per column, per group, space between slides, and many more
-
-            Parallax Transitions
-            Swiper supports modern parallax transition effects that can be used on any element inside of Swiper: on images, on text blocks, on headings, on backgrounds, etc.
-
-            Images Lazy Loading
-            Swiper Lazy Loading delays loading of images in none active/visible slides until user swipes to them. Such feature could make the page load faster and improve Swiper performance
-
-            Virtual Slides
-            Swiper 4 comes with new Virtual Slides features which is great when you have a lot of slides or heavy-content (or heavy-images) slides so it will keep just required amount of slides in DOM
-
-            And many more ...
-            All Swiper 2 well-known features are also here: Responsive, Scroll prevention, Resistant bounds, Autoplay, Loop mode, Nested Swipers
+            </div>
+            <div class="column">
+                <div class="content">
+                    <img src="{{ URL::asset('image/png/JEEK_ICON.png') }}" style="height: 400px;width: 400px;">
+                </div>
+            </div>
         </div>
-
-    </section>
-    <section class="section">
-        <div class="container">
-            Swiper
-            Swiper - is the free and most modern mobile touch slider with hardware accelerated transitions and amazing native behavior. It is intended to be used in mobile websites, mobile web apps, and mobile native/hybrid apps. Designed mostly for iOS, but also works great on latest Android, Windows Phone 8 and modern Desktop browsers
-
-            Swiper is not compatible with all platforms, it is a modern touch slider which is focused only on modern apps/platforms to bring the best experience and simplicity.
-
-            Swiper, along with other great components, is a part of Framework7 - full featured framework for building iOS & Android apps. Swiper is also a default slider component in Ionic Framework
-
-            Powered With Top Notch Features
-            Library Agnostic
-            Swiper doesn't require any JavaScript libraries like jQuery, it makes Swiper much more smaller and faster. So it can be safety to use it with such libraries as jQuery, Zepto, jQuery Mobile, etc.
-
-            1:1 Touch movement
-            By defaut Swiper provides 1:1 touch movement interraction, but this ratio could be configured through Swiper settings
-
-            Mutation Observer
-            Swiper has option to enable Mutation Observer, with this feature Swiper will be automatically reinitilized and recalculate all required parameters if you make dynamic changes in DOM, or in Swiper styles itself
-
-            Reach API
-            Swiper comes with very rich API. It allows to create your own pagination, navigation buttons, create parallax effects and many more
-
-            Full True RTL Support
-            Swiper is the only slider that provides 100% RTL support with correct layout
-
-            Multi Row Slides Layout
-            Swiper allows to have multiple row slides layout, with few slides per column
-
-            Transition Effects
-            There are 3 new transition effects in addition to ususal Slide: Fade, 3D Cube and 3D Coverflow
-
-            Two-way Control
-            Now Swiper may be used as controller for any number of other Swipers, and even be controlled at the same time
-
-            Full Navigation Control
-            Swiper comes with all required built-in navigation elements, such are Pagination, Navigation arrows and Scrollbar
-
-            Flexbox Layout
-            Swiper uses modern flexbox layout for slides layout, this solves a lot of problems and time with size caclulations. Such layout also allows to configure Slides grid using pure CSS
-
-            Most Flexible Slides Layout Grid
-            Swiper has a lot of parameters on initialization to make it as much flexible as possible. You can control slides per view, per column, per group, space between slides, and many more
-
-            Parallax Transitions
-            Swiper supports modern parallax transition effects that can be used on any element inside of Swiper: on images, on text blocks, on headings, on backgrounds, etc.
-
-            Images Lazy Loading
-            Swiper Lazy Loading delays loading of images in none active/visible slides until user swipes to them. Such feature could make the page load faster and improve Swiper performance
-
-            Virtual Slides
-            Swiper 4 comes with new Virtual Slides features which is great when you have a lot of slides or heavy-content (or heavy-images) slides so it will keep just required amount of slides in DOM
-
-            And many more ...
-            All Swiper 2 well-known features are also here: Responsive, Scroll prevention, Resistant bounds, Autoplay, Loop mode, Nested Swipers
+        <div class="columns">
+            <div class="column">
+                <div class="content is-pulled-right">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 84.1 57.6">
+                        <path fill="#FB503B"
+                              d="M83.8 26.9c-.6-.6-8.3-10.3-9.6-11.9-1.4-1.6-2-1.3-2.9-1.2s-10.6 1.8-11.7 1.9c-1.1.2-1.8.6-1.1 1.6.6.9 7 9.9 8.4 12l-25.5 6.1L21.2 1.5c-.8-1.2-1-1.6-2.8-1.5C16.6.1 2.5 1.3 1.5 1.3c-1 .1-2.1.5-1.1 2.9S17.4 41 17.8 42c.4 1 1.6 2.6 4.3 2 2.8-.7 12.4-3.2 17.7-4.6 2.8 5 8.4 15.2 9.5 16.7 1.4 2 2.4 1.6 4.5 1 1.7-.5 26.2-9.3 27.3-9.8 1.1-.5 1.8-.8 1-1.9-.6-.8-7-9.5-10.4-14 2.3-.6 10.6-2.8 11.5-3.1 1-.3 1.2-.8.6-1.4zm-46.3 9.5c-.3.1-14.6 3.5-15.3 3.7-.8.2-.8.1-.8-.2-.2-.3-17-35.1-17.3-35.5-.2-.4-.2-.8 0-.8S17.6 2.4 18 2.4c.5 0 .4.1.6.4 0 0 18.7 32.3 19 32.8.4.5.2.7-.1.8zm40.2 7.5c.2.4.5.6-.3.8-.7.3-24.1 8.2-24.6 8.4-.5.2-.8.3-1.4-.6s-8.2-14-8.2-14L68.1 32c.6-.2.8-.3 1.2.3.4.7 8.2 11.3 8.4 11.6zm1.6-17.6c-.6.1-9.7 2.4-9.7 2.4l-7.5-10.2c-.2-.3-.4-.6.1-.7.5-.1 9-1.6 9.4-1.7.4-.1.7-.2 1.2.5.5.6 6.9 8.8 7.2 9.1.3.3-.1.5-.7.6z"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="column">
+                <div class="content" style="margin-top: 15%">
+                    <p class="title is-1">
+                        Made with Laravel
+                    </p>
+                    <p class="subtitle">
+                        Thanks for Laravel
+                    </p>
+                </div>
+            </div>
         </div>
+        <div class="columns">
+            <div class="column">
+                <div class="content is-pulled-right">
+                    <img src="https://bulma.io/images/bulma-logo.png"
+                         alt="Bulma: a modern CSS framework based on Flexbox" width="400" height="100"
+                         style="margin-top: 40%">
+                </div>
+            </div>
+            <div class="column">
+                <div class="content" style="margin-top: 15%;">
+                    <p class="title is-1">
+                        Beautified by Bulma
+                    </p>
+                    <p class="subtitle">
+                        My favorite CSS Frame -- Bulma
+                    </p>
+                </div>
 
-    </section>
-    <section class="section">
-        <div class="container">
-            Swiper
-            Swiper - is the free and most modern mobile touch slider with hardware accelerated transitions and amazing native behavior. It is intended to be used in mobile websites, mobile web apps, and mobile native/hybrid apps. Designed mostly for iOS, but also works great on latest Android, Windows Phone 8 and modern Desktop browsers
-
-            Swiper is not compatible with all platforms, it is a modern touch slider which is focused only on modern apps/platforms to bring the best experience and simplicity.
-
-            Swiper, along with other great components, is a part of Framework7 - full featured framework for building iOS & Android apps. Swiper is also a default slider component in Ionic Framework
-
-            Powered With Top Notch Features
-            Library Agnostic
-            Swiper doesn't require any JavaScript libraries like jQuery, it makes Swiper much more smaller and faster. So it can be safety to use it with such libraries as jQuery, Zepto, jQuery Mobile, etc.
-
-            1:1 Touch movement
-            By defaut Swiper provides 1:1 touch movement interraction, but this ratio could be configured through Swiper settings
-
-            Mutation Observer
-            Swiper has option to enable Mutation Observer, with this feature Swiper will be automatically reinitilized and recalculate all required parameters if you make dynamic changes in DOM, or in Swiper styles itself
-
-            Reach API
-            Swiper comes with very rich API. It allows to create your own pagination, navigation buttons, create parallax effects and many more
-
-            Full True RTL Support
-            Swiper is the only slider that provides 100% RTL support with correct layout
-
-            Multi Row Slides Layout
-            Swiper allows to have multiple row slides layout, with few slides per column
-
-            Transition Effects
-            There are 3 new transition effects in addition to ususal Slide: Fade, 3D Cube and 3D Coverflow
-
-            Two-way Control
-            Now Swiper may be used as controller for any number of other Swipers, and even be controlled at the same time
-
-            Full Navigation Control
-            Swiper comes with all required built-in navigation elements, such are Pagination, Navigation arrows and Scrollbar
-
-            Flexbox Layout
-            Swiper uses modern flexbox layout for slides layout, this solves a lot of problems and time with size caclulations. Such layout also allows to configure Slides grid using pure CSS
-
-            Most Flexible Slides Layout Grid
-            Swiper has a lot of parameters on initialization to make it as much flexible as possible. You can control slides per view, per column, per group, space between slides, and many more
-
-            Parallax Transitions
-            Swiper supports modern parallax transition effects that can be used on any element inside of Swiper: on images, on text blocks, on headings, on backgrounds, etc.
-
-            Images Lazy Loading
-            Swiper Lazy Loading delays loading of images in none active/visible slides until user swipes to them. Such feature could make the page load faster and improve Swiper performance
-
-            Virtual Slides
-            Swiper 4 comes with new Virtual Slides features which is great when you have a lot of slides or heavy-content (or heavy-images) slides so it will keep just required amount of slides in DOM
-
-            And many more ...
-            All Swiper 2 well-known features are also here: Responsive, Scroll prevention, Resistant bounds, Autoplay, Loop mode, Nested Swipers
+            </div>
         </div>
-
     </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="content has-text-centered">
+                <p>
+                    <strong>JPSP</strong>
+                    by Harvey Qiu & Cheney Ni & Artanic Qiu
+                </p>
+                <p>
+                    The source code is licensed
+                    <a href="http://opensource.org/licenses/mit-license.php">MIT</a>
+                </p>
+
+            </div>
+
+        </div>
+    </footer>
 @endsection

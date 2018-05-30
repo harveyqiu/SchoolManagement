@@ -8,9 +8,6 @@
     <title>建平中学学生平台</title>
     <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/style.css') }}">
     <style>
-        .is-active {
-            transform: translateY(0px);
-        }
     </style>
 </head>
 <body>
@@ -111,12 +108,10 @@
 
             // 向下滚动
             if (new_scroll_position < last_scroll_position && last_scroll_position > 80) {
-                navbar.classList.add("is-active");
-                navbar.classList.remove("is-info")
+                navbar.classList.remove("is-info");
                 // 向上滚动
-            } else if (new_scroll_position > last_scroll_position) {
-                navbar.classList.remove("is-active");
-                navbar.classList.add("is-info")
+            } else if (new_scroll_position > last_scroll_position ) {
+                navbar.classList.add("is-info");
             }
 
             new_scroll_position = last_scroll_position;
