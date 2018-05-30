@@ -63,10 +63,10 @@
             </p>
             <ul class="menu-list">
                 <li>
-                    <a href="{% url 'ClubDashboardIndex' %}">仪表盘</a>
+                    <a href="{{URL::to('/society/proprieter/')}}">仪表盘</a>
                 </li>
                 <li>
-                    <a href="/Profile">社团资料修改</a>
+                    <a href="{{URL::to('/society/proprieter/profile')}}">社团资料修改</a>
                 </li>
             </ul>
             <p class="menu-label">
@@ -74,7 +74,7 @@
             </p>
             <ul class="menu-list">
                 <li>
-                    <a href="{{URL::to('society/proprieter/posts/add')}}">添加</a>
+                    <a href="{{URL::to('/society/proprieter/posts/add')}}">添加</a>
                 </li>
             </ul>
             <p class="menu-label">
@@ -82,7 +82,7 @@
             </p>
             <ul class="menu-list">
                 <li>
-                    <a href="/Member">成员管理</a>
+                    <a href="{{URL::to('/society/proprieter/members/list')}}">成员管理</a>
                 </li>
                 <li>
                     <a href="/recruit/classroom/apply">公共教室申请</a>

@@ -13,6 +13,18 @@
                 </div>
             </div>
         </div>
+        <div class="columns">
+            <div class="column">
+
+            </div>
+        </div>
+    </div>
+    <div class="columns">
+        <div class="column">1</div>
+        <div class="column">2</div>
+        <div class="column">3</div>
+        <div class="column">4</div>
+        <div class="column">5</div>
     </div>
     <script src="https://cdn.bootcss.com/axios/0.18.0/axios.js"></script>
     <script src="https://cdn.bootcss.com/vue/2.5.16/vue.min.js"></script>
@@ -33,7 +45,7 @@
                 ]
             },
             beforeCreate: function() {
-                axios.post('')
+                axios.post('{{ URL::to('/society/admin/classrooms/listData') }}')
                     .then(function (response) {
                         console.log(response);
                     })
@@ -41,6 +53,26 @@
                         console.log(error);
                     });
 
+            },
+            methods: {
+                acceptRequest: function () {
+                    axios.post('')
+                        .then(function (response) {
+
+                        })
+                        .catch(function (error) {
+
+                        });
+                },
+                denyRequest: function () {
+                    axios.post('')
+                        .then(function (response) {
+
+                        })
+                        .catch(function (error) {
+
+                        })
+                }
             }
         })
     </script>

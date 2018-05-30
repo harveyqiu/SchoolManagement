@@ -52,6 +52,7 @@ Route::prefix('society')->group(function () {
             return view('welcome');
         });
         Route::prefix('classrooms')->group(function () {
+            Route::post('listData','ClassroomController@listDataForAdmin');
             Route::get('list','ClassroomController@listForAdmin');
         });
         Route::get('login',function () {
@@ -68,6 +69,9 @@ Route::prefix('society')->group(function () {
             });
             Route::get('add','PostController@pre_add');
         });
+        Route::prefix('profile')->group(function () {
+            Route::get('/','SocietyProfileController@index');
+        });
         Route::prefix('members')->group(function () {
             Route::get('list',function () {
                 return view('welcome');
@@ -79,6 +83,7 @@ Route::prefix('society')->group(function () {
                return view('welcome');
             });
         });
+        Route::get('/','ProprieterDashboardController@index');
     });
     Route::get('auth/login','StudentLoginController@getLogin');
     Route::post('auth/login','StudentLoginController@postLogin');
