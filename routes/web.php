@@ -51,6 +51,9 @@ Route::prefix('society')->group(function () {
         Route::prefix('activities')->group(function () {
             return view('welcome');
         });
+        Route::prefix('classrooms')->group(function () {
+            Route::get('list','ClassroomController@listForAdmin');
+        });
         Route::get('login',function () {
             return view('society.admin.login');
         });
