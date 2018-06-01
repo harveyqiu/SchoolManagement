@@ -12,7 +12,7 @@ class Society extends Model
      * @var array
      */
     protected $fillable = [
-        'name', 'email','introduction','proprieter_name','proprieter_class','proprieter_grade','proprieter_qq','achievements','recruit','stars','type','confirmed'
+        'name', 'email','introduction','proprieter_name','proprieter_class','proprieter_grade','proprieter_qq','achievements','recruit','stars','type','confirmed','recruit_qq_group'
     ];
 
     protected $hidden = [

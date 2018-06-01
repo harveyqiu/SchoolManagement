@@ -2,14 +2,14 @@
 
 @section('content')
     <div>
-        <div class="hero is-primary">
+        <div class="hero is-info">
             <div class="hero-body">
                 <div class="container">
                     <div class="colmuns">
                         <div class="column">
                             <p class="title">{{$society->name}}</p>
                             <div class="content">
-                                <p>社团QQ群: </p>
+                                <p>{{$society->recruit_qq_group}}</p>
                             </div>
                         </div>
                     </div>
@@ -47,7 +47,7 @@
                         <section class="section">
                             @if ($society->recruit == '1')
                                 <form action="" method="post">
-                                    <input hidden name="ClubId" value=""/>
+                                    <input hidden name="ClubId" value="" />
                                     <button class="button is-info is-large">
                                         加入该社团
                                     </button>

@@ -12,8 +12,8 @@ class SocietyController extends Controller
         return view('society.societies.list',['societies'=>$societies]);
     }
 
-    public function detail($id) {
-        $society = Society::find($id);
+    public function detail($society_id) {
+        $society = Society::where('society_id',$society_id)->get()->first();
         return view('society.societies.detail',['society'=>$society]);
     }
 

@@ -61,12 +61,8 @@ Route::prefix('society')->group(function () {
     });
     Route::prefix('proprieter')->group(function () {
         Route::prefix('posts')->group(function () {
-            Route::get('list', function () {
-                return view('welcome');
-            });
-            Route::get('detail', function () {
-                return view('welcome');
-            });
+            Route::get('list','PostController@listForProprieter');
+            Route::get('detail', 'PostController@detailForProprieter');
             Route::get('add','PostController@pre_add');
         });
         Route::prefix('profile')->group(function () {

@@ -38,7 +38,7 @@
             </div>
             <div class="column">
                 <div class="field">
-                    <label class="label">社长年级</label>
+                    <label class="label">社长班级</label>
                     <div class="control is-expanded">
                         <div class="select" style="width:100%">
                             <select name="ProprieterClass" style="width:100%">
