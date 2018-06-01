@@ -51,19 +51,15 @@
                     <div class="control is-expanded">
                         <div class="select" style="width:100%">
                             <select name="ProprieterClass" style="width:100%">
-                                <option label="1" value="1"></option>
-                                <option label="2" value="2"></option>
-                                <option label="3" value="3"></option>
-                                <option label="4" value="4"></option>
-                                <option label="5" value="5"></option>
-                                <option label="6" value="6"></option>
-                                <option label="7" value="7"></option>
-                                <option label="8" value="8"></option>
-                                <option label="9" value="9"></option>
-                                <option label="10" value="10"></option>
-                                <option label="11" value="11"></option>
-                                <option label="12" value="12"></option>
-                                <option label="13" value="13"></option>
+                                @foreach(range(1,13) as $i)
+                                    @if ($i == $society->proprieter_class)
+                                        <option value="{{$i}}" selected="selected">{{$i}}</option>
+                                        @continue
+                                    @elseif($i != $society->proprieter_class)
+                                        <option value="{{$i}}">{{$i}}</option>
+                                        @continue
+                                    @endif
+                                @endforeach
                             </select>
                         </div>
                     </div>
@@ -125,6 +121,15 @@
                     <label class="label">社团成就</label>
                     <div class="control">
                         <textarea class="textarea" name="SocietyAchievement">{{$society->achievements}}</textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column">
+                <div class="field">
+                    <div class="control">
+                        <button class="button is-link" style="height:50px;width:100%">提交</button>
                     </div>
                 </div>
             </div>
