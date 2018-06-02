@@ -17,7 +17,7 @@ class Student extends Model
     }
 
     protected $fillable = [
-        'classroom', 'grade', 'realname', 'qq','attend_year','user_id'
+        'class', 'grade', 'real_name', 'qq','attend_year','user_id'
     ];
 
     protected $hidden = [

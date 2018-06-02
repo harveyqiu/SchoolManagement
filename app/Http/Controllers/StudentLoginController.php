@@ -4,29 +4,25 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
-class LoginController extends Controller
+class StudentLoginController extends Controller
 {
     use AuthenticatesUsers;
     protected $redirectTo = '/society/dashboard';
-
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
-
-    public function username() {
-        return 'login_name';
-    }
+    protected $real_name;
 
     public function __construct()
     {
-        $this->middleware('guest')->except('logout');
+        $this->middleware('guest:student')->except('logout');
+        $this->username = config('student.global.username');
     }
 
     public function postLogin(Request $request)
     {
-        $username = $request->input('username')
-        $password = 
+        $username = $request->input('username');
+    }
+
+    public function showLoginForm()
+    {
+        return view('society.auth.login');
     }
 }

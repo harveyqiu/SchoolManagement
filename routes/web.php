@@ -81,10 +81,11 @@ Route::prefix('society')->group(function () {
         });
         Route::get('/','ProprieterDashboardController@index');
     });
-    Route::get('auth/login','StudentLoginController@getLogin');
-    Route::post('auth/login','StudentLoginController@postLogin');
     Route::get('dashboard',function () {
        return view('welcome');
+    });
+    Route::prefix('auth')->group(function () {
+        Route::get('login','StudentLoginController@showLoginForm');
     });
     Route::get('/',function () {
         return view('society.index');
