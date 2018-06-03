@@ -20,7 +20,7 @@ class CreateStudentsTable extends Migration
             $table->integer('grade');
             $table->integer('attend_year');
             $table->integer('qq');
-            $table->unsignedInteger('user_id');
+            $table->unsignedInteger('user_id')->unique();
             $table->rememberToken();
             $table->string('password',60);
             $table->timestamps();

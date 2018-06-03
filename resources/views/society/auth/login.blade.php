@@ -3,7 +3,7 @@
 @section('content')
     <div class="hero-body">
         <div class="container">
-            <form action="" method="post">
+            <form action="{{URL::to('/society/auth/authenticate')}}" method="post">
                 <section class="container">
                     <h2 class="title is-2" style="text-align: center">学生登录</h2>
                     <div class="columns is-mobile">
@@ -13,7 +13,7 @@
                                 <label class="label">用户名</label>
                                 <div class="control">
                                     <input class="input" type="number" placeholder="e.g. 20151333"
-                                           name="username">
+                                           name="user_id">
                                 </div>
                             </div>
                         </div>
@@ -23,7 +23,7 @@
                             <div class="field">
                                 <label class="label">密码</label>
                                 <div class="control">
-                                    <input class="input" type="password" name="password" title="密码">
+                                    <input class="input" type="password" name="password">
                                 </div>
                             </div>
                         </div>

@@ -19,11 +19,12 @@ class RedirectIfAuthenticated
     {
         if (Auth::guard($guard)->check()) {
             $url = '';
-            if ($guard = 'students') {
-                $url = 'society/dashboard';
-            } elseif ($guard = 'admins') {
+            if ($guard = 'student') {
+                $url = 'society/dashboard/';
+            } elseif ($guard = 'admin') {
                 $url = 'society/admin/dashboard';
             }
+            // todo: ??? unknown code
             return redirect($url);
         }
 

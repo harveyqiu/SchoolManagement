@@ -69,11 +69,11 @@
                         欢迎你，
                     </a>
                     <div class="navbar-dropdown">
-                        <a class="navbar-item " href="">个人中心</a>
+                        <a class="navbar-item " href="{{URL::to('/society/dashboard/')}}">个人中心</a>
                         <a class="navbar-item " href="">社团</a>
                         <a class="navbar-item " href="">活动</a>
                         <a class="navbar-item " href="">更改密码</a>
-                        <a class="navbar-item " href="">注销</a>
+                        <a class="navbar-item " href="{{URL::to('/society/auth/logout')}}">注销</a>
                     </div>
                 </div>
                 <div class="navbar-item has-dropdown is-hoverable">
