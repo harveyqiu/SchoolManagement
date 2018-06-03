@@ -79,6 +79,10 @@ Route::prefix('society')->group(function () {
                return view('welcome');
             });
         });
+        Route::prefix('auth')->group(function () {
+            Route::get('login','StudentLoginController@showLoginForm');
+            Route::post('login','StudentLoginController@login');
+        });
         Route::get('/','ProprieterDashboardController@index');
     });
     Route::prefix('dashboard')->group(function () {

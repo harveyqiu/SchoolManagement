@@ -2,9 +2,8 @@
 
 namespace App;
 
-use Illuminate\Database\Eloquent\Model;
-
-class Society extends Model
+use Illuminate\Foundation\Auth\User as Authenticatable;
+class Society extends Authenticatable
 {
     /**
      * The attributes that are mass assignable.

@@ -46,6 +46,11 @@ return [
             'provider' => 'admins',
         ],
 
+        'society' => [
+            'driver' => 'session',
+            'provider' => 'societies'
+        ],
+
         'api' => [
             'driver' => 'token',
             'provider' => 'students',
