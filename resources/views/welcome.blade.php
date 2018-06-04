@@ -35,12 +35,6 @@
                 position: relative;
             }
 
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
             .content {
                 text-align: center;
             }
@@ -78,6 +72,10 @@
 
                 <div class="subtitle m-b-md">
                     开发中
+                </div>
+
+                <div class="links">
+                    <a href="{{URL::to('/society')}}">社团平台</a>
                 </div>
 
                 <div class="links">

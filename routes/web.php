@@ -16,6 +16,7 @@ Route::prefix('society')->group(function () {
         Route::get('detail/{id}','SocietyController@detail');
         Route::get('list','SocietyController@list');
         Route::get('establish','SocietyController@establish');
+        Route::post('join','SocietyController@join');
 });
     Route::get('activities', function () {
         return view('welcome');
@@ -80,8 +81,8 @@ Route::prefix('society')->group(function () {
             });
         });
         Route::prefix('auth')->group(function () {
-            Route::get('login','StudentLoginController@showLoginForm');
-            Route::post('login','StudentLoginController@login');
+            Route::get('login','SocietyLoginController@showLoginForm');
+            Route::post('login','SocietyLoginController@login');
         });
         Route::get('/','ProprieterDashboardController@index');
     });

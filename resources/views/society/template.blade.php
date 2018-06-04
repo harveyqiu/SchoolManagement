@@ -84,7 +84,7 @@
                         <a class="navbar-item " href="{{URL::to('/society/auth/login')}}">
                             学生登录
                         </a>
-                        <a class="navbar-item " href="">
+                        <a class="navbar-item " href="{{URL::to('/society/proprieter/auth/login')}}">
                             社长登录
                         </a>
                         <a class="navbar-item " href="">

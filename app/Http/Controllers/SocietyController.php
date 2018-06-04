@@ -7,6 +7,12 @@ use Illuminate\Http\Request;
 
 class SocietyController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware('auth.student')->only('join');
+    }
+
     public function list() {
         $societies = Society::where('id','>=','0')->paginate(10);
         return view('society.societies.list',['societies'=>$societies]);
@@ -36,6 +42,8 @@ class SocietyController extends Controller
     }
 
     public function join() {
+        $society_id = Input::get('society_id');
+        $user_id = Input::get('user_id');
         return view('welcome');
     }
 

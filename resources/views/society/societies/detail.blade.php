@@ -46,9 +46,16 @@
                     <div class="column">
                         <section class="section">
                             @if ($society->recruit == '1')
-                                <form action="" method="post">
-                                    <input hidden name="ClubId" value="" />
-                                    <button class="button is-info is-large">
+                                <form action="{{URL::to('/society/societies/join')}}" method="post">
+                                    @csrf
+                                    @if (\Illuminate\Support\Facades\Auth::guard('student')->check())
+                                    <input hidden name="user_id" value="{{request()->user()->user_id}}">
+                                    <input hidden name="society_id" value="{{$society->society_id}}">
+                                        {{--todo: test when logged in with the guard of society what will happen--}}
+
+                                    @endif
+
+                                    <button class="button is-info is-large" type="submit">
                                         加入该社团
                                     </button>
                                 </form>

@@ -28,9 +28,10 @@ class CreateSocietiesTable extends Migration
             $table->integer('stars');
             $table->integer('type');
             $table->timestamps();
-            $table->unsignedInteger('user_id');
             $table->boolean('confirmed');
-            $table->string('recruit_qq_group');
+            $table->integer('recruit_qq_group');
+            $table->rememberToken();
+            $table->string('password',60);
         });
     }
 
