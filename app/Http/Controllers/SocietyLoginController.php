@@ -16,7 +16,7 @@ class SocietyLoginController extends Controller
 
     public function showLoginForm()
     {
-        return view('society.proprieter.login');
+        return view('society.proprieter.auth.login');
     }
 
     public function guard()

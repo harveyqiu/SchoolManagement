@@ -44,6 +44,7 @@ class SocietyController extends Controller
     public function join() {
         $society_id = Input::get('society_id');
         $user_id = Input::get('user_id');
+
         return view('welcome');
     }
 

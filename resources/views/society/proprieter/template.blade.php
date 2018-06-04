@@ -39,7 +39,7 @@
                     <a class="navbar-item" href="{{URL::to('/society/proprieter/profile')}}">
                         社团信息
                     </a>
-                    <a class="navbar-item">
+                    <a class="navbar-item" href="{{URL::to('/society/proprieter/auth/logout')}}">
                         注销
                     </a>
                 </div>

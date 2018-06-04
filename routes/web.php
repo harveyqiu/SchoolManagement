@@ -83,6 +83,7 @@ Route::prefix('society')->group(function () {
         Route::prefix('auth')->group(function () {
             Route::get('login','SocietyLoginController@showLoginForm');
             Route::post('login','SocietyLoginController@login');
+            Route::get('logout','SocietyLoginController@logout');
         });
         Route::get('/','ProprieterDashboardController@index');
     });
